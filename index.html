@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <title>Jeawaz</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="product__basket">
+          <div class="user__information">
+            <div class="user__info">
+              <h2 class="user__info__title">اطلاعات کاربری شما</h2>
+            </div>
+            <svg
+              width="300"
+              height="3"
+              viewBox="0 0 300 3"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="885.999"
+                y1="2.05664"
+                x2="-0.000848183"
+                y2="0.499999"
+                stroke="#EBEBEB"
+              />
+            </svg>
+            <div class="receiver__info">
+              <h3 class="receiver__info__title">اطلاعات تحویل گیرنده</h3>
+            </div>
+            <div class="receiver__info__box">
+              <div class="receiver__info__box__name">
+                <label class="label" for="username">نام و نام خانوادگی</label>
+                <input type="text" id="username" />
+              </div>
+
+              <div class="receiver__info__box__phone">
+                <label class="label" for="usernumber">شماره تماس گیرنده</label>
+                <input type="text" id="usernumber" />
+              </div>
+            </div>
+
+            <div class="receiver__address">
+              <h3 class="receiver__address__title">آدرس تحویل</h3>
+              <a class="new__address" href="#">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 10H10M10 10H15M10 10V15M10 10V5"
+                    stroke="#CC312D"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>انتخاب آدرس</span>
+              </a>
+            </div>
+
+            <div class="receiver__address__box">
+              <div class="receiver__province">
+                <label class="label" for="province">استان</label>
+                <select id="province">
+                  <option value="">انتخاب کنید...</option>
+                </select>
+              </div>
+
+              <div class="receiver__city">
+                <label class="label" for="city">شهر</label>
+                <select id="city" disabled>
+                  <option value="">ابتدا استان را انتخاب کنید</option>
+                </select>
+              </div>
+
+              <div class="receiver__license__plate">
+                <label class="label" for="license__plate">پلاک</label>
+                <input type="number" id="license__plate" />
+              </div>
+
+              <div class="receiver__zip__code">
+                <label class="label" for="zip__code">کد پستی</label>
+                <input type="number" id="zip__code" />
+              </div>
+
+              <div class="receiver__postal__address">
+                <label class="label" for="postal__address">نشانی پستی</label>
+                <textarea id="postal__address"></textarea>
+              </div>
+            </div>
+
+            <div class="send">
+              <div class="send__header">
+                <h3 class="send__title">انتخاب نحوه ارسال</h3>
+                <span class="send__product__number">۳ محصول در سبد خرید</span>
+              </div>
+              <svg
+                width="300"
+                height="3"
+                viewBox="0 0 300 3"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="885.999"
+                  y1="2.05664"
+                  x2="-0.000848183"
+                  y2="0.499999"
+                  stroke="#EBEBEB"
+                />
+              </svg>
+
+              <div class="send__box">
+                <div class="send__box__tipax">
+                  <div class="send__box__tipax__text">
+                    <input type="radio" id="tipax" name="send__box" />
+                    <span class="radio-icon">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.18C0 17.83 2.17 20 5.81 20H14.18C17.82 20 19.99 17.83 19.99 14.19V5.81C20 2.17 17.83 0 14.19 0ZM14.78 7.7L9.11 13.37C8.97 13.51 8.78 13.59 8.58 13.59C8.38 13.59 8.19 13.51 8.05 13.37L5.22 10.54C4.93 10.25 4.93 9.77 5.22 9.48C5.51 9.19 5.99 9.19 6.28 9.48L8.58 11.78L13.72 6.64C14.01 6.35 14.49 6.35 14.78 6.64C15.07 6.93 15.07 7.4 14.78 7.7Z"
+                          fill="#CC312D"
+                        />
+                      </svg>
+                    </span>
+                    <label for="tipax">تیپاکس با بیمه (۱ تا ۳ روز کاری)</label>
+                  </div>
+                  <div class="send__box__tipax__price">
+                    <span>۴۵,۰۰۰</span>
+                    <span>تومان</span>
+                  </div>
+                </div>
+
+                <div class="send__box__pishtaz">
+                  <div class="send__box__pishtaz__text">
+                    <input type="radio" id="pishtaz" name="send__box" />
+                    <span class="radio-icon">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.18C0 17.83 2.17 20 5.81 20H14.18C17.82 20 19.99 17.83 19.99 14.19V5.81C20 2.17 17.83 0 14.19 0ZM14.78 7.7L9.11 13.37C8.97 13.51 8.78 13.59 8.58 13.59C8.38 13.59 8.19 13.51 8.05 13.37L5.22 10.54C4.93 10.25 4.93 9.77 5.22 9.48C5.51 9.19 5.99 9.19 6.28 9.48L8.58 11.78L13.72 6.64C14.01 6.35 14.49 6.35 14.78 6.64C15.07 6.93 15.07 7.4 14.78 7.7Z"
+                          fill="#CC312D"
+                        />
+                      </svg>
+                    </span>
+                    <label for="pishtaz">پست پیشتاز (۲ تا ۵ روز کاری)</label>
+                  </div>
+                  <div class="send__box__pishtaz__price">
+                    <span>۸۰,۰۰۰</span>
+                    <span>تومان</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="basket__info"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="source/app.js"></script>
+  </body>
+</html>
