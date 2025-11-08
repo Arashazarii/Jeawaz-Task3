@@ -616,6 +616,9 @@ option {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-family: var(--primary-font-md);
+  font-size: 1.4rem;
 }
 .basket__product__footer__icon__delete {
   background-color: var(--color-white);
